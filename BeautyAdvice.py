@@ -11,9 +11,46 @@ class BeautyAdvice:
     pressure = weather_data["pressure"]
     humidity = weather_data["humidity"]
     wind_speed = weather_data["wind_speed"]
-    rain = weather_data["rain"]
     uvi = weather_data["uvi"]
-    snow = weather_data["snow"]
-    # more weather parameters
 
-    # logic for weather conditions
+    # values that are not always present, default to 0 if not present
+    rain = weather_data.get("rain", 0)
+    snow = weather_data.get("snow", 0)
+    
+    variables = {
+        "temperature": temperature,
+        "pressure": pressure,
+        "humidity": humidity,
+        "wind_speed": wind_speed,
+        "UV_index": uvi,
+        "rainfall": rain,
+        "snowfall": snow
+    }
+
+    with open('beauty_advice.json', 'r') as file:
+        conditions = json.load(file)["beauty_advice"]
+
+    advice = []
+    for condition in conditions:
+      if all(self.check_condition(variables, key, value) for key, value in condition.items() if key in variables):
+          advice.append((condition["condition"], condition["hair_care"], condition["skin_care"]))
+
+    return advice
+
+  def check_condition(self, variables, key, value):
+    if key in {'rainfall', 'snowfall'} and variables[key] >= value['min']:
+        return True
+    elif key in {'temperature', 'humidity', 'wind_speed', 'UV_index', 'pressure'}:
+       # Get the min and max values, and handle None explicitly
+        min_val = value.get('min')
+        max_val = value.get('max')
+        min_val = float('-inf') if min_val is None else min_val
+        max_val = float('inf') if max_val is None else max_val
+
+        variable_value = variables.get(key)
+        if variable_value is None:
+            return False  # If the variable is not present, the condition cannot be met
+        return min_val <= variable_value <= max_val
+    
+    return False
+  
