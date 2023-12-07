@@ -1,84 +1,69 @@
 {
-  "beauty_advice": [
-      {
-          "condition": "High Humidity",
-          "temperature": {"min": null, "max": null},
-          "humidity": {"min": 70, "max": 100},
-          "UV_index": {"min": null, "max": null},
-          "wind": {"min": null, "max": null},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Use anti-frizz products and consider hairstyles that cope well with humidity, like braids or buns. Natural remedy: Rinse hair with diluted apple cider vinegar for frizz control.",
-          "skin_care": "Use light, non-greasy moisturizers and mattifying makeup to reduce shine. Natural remedy: Aloe vera gel for soothing and hydration."
-      },
-      {
-          "condition": "Low Humidity",
-          "temperature": {"min": null, "max": null},
-          "humidity": {"min": 0, "max": 30},
-          "UV_index": {"min": null, "max": null},
-          "wind": {"min": null, "max": null},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Moisturize your hair with hydrating shampoos and conditioners, and consider leave-in treatments. Natural remedy: Olive oil hair masks for deep nourishment.",
-          "skin_care": "Apply heavy moisturizers and use hydrating masks to prevent dryness. Natural remedy: Shea butter for intense moisture."
-      },
-      {
-          "condition": "High UV Index",
-          "temperature": {"min": null, "max": null},
-          "humidity": {"min": null, "max": null},
-          "UV_index": {"min": 7, "max": null},
-          "wind": {"min": null, "max": null},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Use hair products with UV protection, and consider wearing hats or scarves to protect your scalp. Natural remedy: Coconut oil to protect hair from UV damage.",
-          "skin_care": "Apply broad-spectrum sunscreen with at least SPF 30, and reapply every two hours. Natural remedy: Green tea extract for its antioxidant properties."
-      },
-      {
-          "condition": "Cold and Windy",
-          "temperature": {"min": null, "max": 5},
-          "humidity": {"min": null, "max": null},
-          "UV_index": {"min": null, "max": null},
-          "wind": {"min": 20, "max": null},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Protect your hair from breakage with oil treatments and minimize exposure to the wind. Natural remedy: Honey and yogurt mask for moisture.",
-          "skin_care": "Use rich moisturizers to combat windburn, and cover exposed skin with scarves or hats. Natural remedy: Cucumber slices for refreshing and hydrating skin."
-      },
-      {
-          "condition": "Hot and Dry",
-          "temperature": {"min": 30, "max": null},
-          "humidity": {"min": 0, "max": 30},
-          "UV_index": {"min": 5, "max": null},
-          "wind": {"min": null, "max": null},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Use hydrating hair masks and avoid excessive heat styling. Natural remedy: Avocado hair mask for hydration.",
-          "skin_care": "Stay hydrated, use light moisturizers, and protect your skin with sunscreen. Natural remedy: Hyaluronic acid from natural sources like root vegetables."
-      },
-      {
-          "condition": "Moderate Weather",
-          "temperature": {"min": 15, "max": 25},
-          "humidity": {"min": 30, "max": 70},
-          "UV_index": {"min": 3, "max": 7},
-          "wind": {"min": null, "max": 20},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Maintain a regular hair care routine suitable for your hair type. Natural remedy: Regular scalp massage with essential oils like lavender or peppermint.",
-          "skin_care": "Continue with a balanced skin care routine suitable for your skin type. Natural remedy: Daily use of rose water as a toner for skin balance."
-      },
-      {
-          "condition": "Storm Approaching",
-          "temperature": {"min": null, "max": null},
-          "humidity": {"min": null, "max": null},
-          "UV_index": {"min": null, "max": null},
-          "wind": {"min": null, "max": null},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Preventative styling products to maintain hairstyle. Natural remedy: Argan oil to keep hair smooth.",
-          "skin_care": "Balanced, protective moisturizers. Natural remedy: Tea tree oil mixed with carrier oil for skin protection."
-      },
-      {
-          "condition": "Rainy and High Barometric Pressure",
-          "temperature": {"min": 10, "max": 20},
-          "humidity": {"min": 80, "max": 100},
-          "UV_index": {"min": null, "max": 3},
-          "wind": {"min": null, "max": 10},
-          "barometric_pressure": {"min": null, "max": null},
-          "hair_care": "Silicone-based serums to tame frizz. Natural remedy: Honey and yogurt mask for moisture.",
-          "skin_care": "Hydrating, non-comedogenic moisturizers. Natural remedy: Cucumber slices for refreshing and hydrating skin."
-      }
-  ]
+    "beauty_advice": [
+        {
+            "condition": "High Humidity",
+            "humidity": {"min": 70, "max": 100},
+            "hair_care": "Use anti-frizz products and consider hairstyles that cope well with humidity, like braids or buns. Natural remedy: Rinse hair with diluted apple cider vinegar for frizz control.",
+            "skin_care": "Use light, non-greasy moisturizers and mattifying makeup to reduce shine. Natural remedy: Aloe vera gel for soothing and hydration."
+        },
+        {
+            "condition": "Low Humidity",
+            "humidity": {"min": 0, "max": 30},
+            "hair_care": "Moisturize your hair with hydrating shampoos and conditioners, and consider leave-in treatments. Natural remedy: Olive oil hair masks for deep nourishment.",
+            "skin_care": "Apply heavy moisturizers and use hydrating masks to prevent dryness. Natural remedy: Shea butter for intense moisture."
+        },
+        {
+            "condition": "High UV Index",
+            "UV_index": {"min": 7, "max": null},
+            "hair_care": "Use hair products with UV protection, and consider wearing hats or scarves to protect your scalp. Natural remedy: Coconut oil to protect hair from UV damage.",
+            "skin_care": "Apply broad-spectrum sunscreen with at least SPF 30, and reapply every two hours. Natural remedy: Green tea extract for its antioxidant properties."
+        },
+        {
+            "condition": "Cold and Windy",
+            "temperature": {"min": null, "max": 41}, 
+            "wind": {"min": 12, "max": null},        
+            "hair_care": "Protect your hair from breakage with oil treatments and minimize exposure to the wind. Natural remedy: Honey and yogurt mask for moisture.",
+            "skin_care": "Use rich moisturizers to combat windburn, and cover exposed skin with scarves or hats. Natural remedy: Cucumber slices for refreshing and hydrating skin."
+        },
+        {
+            "condition": "Hot and Dry",
+            "temperature": {"min": 86, "max": null},
+            "humidity": {"min": 0, "max": 30},
+            "UV_index": {"min": 5, "max": null},
+            "hair_care": "Use hydrating hair masks and avoid excessive heat styling. Natural remedy: Avocado hair mask for hydration.",
+            "skin_care": "Stay hydrated, use light moisturizers, and protect your skin with sunscreen. Natural remedy: Hyaluronic acid from natural sources like root vegetables."
+        },
+        {
+            "condition": "Moderate Weather",
+            "temperature": {"min": 59, "max": 77},
+            "humidity": {"min": 30, "max": 70},
+            "UV_index": {"min": 3, "max": 7},
+            "hair_care": "Maintain a regular hair care routine suitable for your hair type. Natural remedy: Regular scalp massage with essential oils like lavender or peppermint.",
+            "skin_care": "Continue with a balanced skin care routine suitable for your skin type. Natural remedy: Daily use of rose water as a toner for skin balance."
+        },
+        {
+            "condition": "Rainy Weather",
+            "rainfall": {"min": 1, "max": null},
+            "hair_care": "Use water-resistant hair products and consider updos to protect your hair. Natural remedy: A leave-in conditioner to help with humidity.",
+            "skin_care": "Water-resistant makeup and use of hydrating toners. Natural remedy: Witch hazel to balance skin moisture."
+        },
+        {
+            "condition": "Snowy Weather",
+            "snowfall": {"min": 1, "max": null},
+            "hair_care": "Moisturizing hair products and protect hair with scarves or hats. Natural remedy: Argan oil for added moisture.",
+            "skin_care": "Rich, protective moisturizers and lip balm to prevent chapping. Natural remedy: Shea butter for skin and lip protection."
+        },
+        {
+            "condition": "High Atmospheric Pressure",
+            "atmospheric_pressure": {"min": 1020, "max": null},
+            "hair_care": "Regular hair care routine. Natural remedy: Jojoba oil for maintaining hair health.",
+            "skin_care": "Regular skin care routine. Natural remedy: Regular application of natural moisturizing oils like almond oil."
+        },
+        {
+            "condition": "Low Atmospheric Pressure",
+            "atmospheric_pressure": {"min": null, "max": 1010},
+            "hair_care": "Volumizing products to counteract limpness in hair. Natural remedy: Egg white mask for hair volume.",
+            "skin_care": "Lightweight moisturizers to prevent skin from feeling heavy. Natural remedy: Green tea for toning and refreshing skin."
+        }
+    ]
 }
