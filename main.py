@@ -1,6 +1,10 @@
 from dotenv import load_dotenv
 import os
 
+from Weather import Weather
+from BeautyAdvice import BeautyAdvice
+from UserInterface import UserInterface
+
 load_dotenv()
 
 def main():
