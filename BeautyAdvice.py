@@ -19,7 +19,7 @@ class BeautyAdvice:
     
     variables = {
         "temperature": temperature,
-        "pressure": pressure,
+        "atmospheric_pressure": pressure,
         "humidity": humidity,
         "wind_speed": wind_speed,
         "UV_index": uvi,
@@ -32,15 +32,16 @@ class BeautyAdvice:
 
     advice = []
     for condition in conditions:
-      if all(self.check_condition(variables, key, value) for key, value in condition.items() if key in variables):
-          advice.append((condition["condition"], condition["hair_care"], condition["skin_care"]))
-
+      condition_items = [(k, v) for k, v in condition.items() if k in variables]
+      if condition_items and all(self.check_condition(variables, key, value) for key, value in condition_items):
+        advice.append((condition["condition"], condition["hair_care"], condition["skin_care"]))
+        
     return advice
 
   def check_condition(self, variables, key, value):
     if key in {'rainfall', 'snowfall'} and variables[key] >= value['min']:
         return True
-    elif key in {'temperature', 'humidity', 'wind_speed', 'UV_index', 'pressure'}:
+    elif key in {'temperature', 'humidity', 'wind_speed', 'UV_index', 'atmospheric_pressure'}:
        # Get the min and max values, and handle None explicitly
         min_val = value.get('min')
         max_val = value.get('max')
