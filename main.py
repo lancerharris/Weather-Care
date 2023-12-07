@@ -1,5 +1,10 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 def main():
-  api_key = "api key"
+  api_key = os.getenv("API_KEY")
   advice_file = "beauty_advice.json"
 
   weather = Weather(api_key)
