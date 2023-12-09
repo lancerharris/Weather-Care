@@ -64,6 +64,119 @@
             "atmospheric_pressure": {"min": null, "max": 1010},
             "hair_care": "Volumizing products to counteract limpness in hair. Natural remedy: Egg white mask for hair volume.",
             "skin_care": "Lightweight moisturizers to prevent skin from feeling heavy. Natural remedy: Green tea for toning and refreshing skin."
+        },
+        {
+            "condition": "Mild and Humid",
+            "temperature": {"min": 60, "max": 75},
+            "humidity": {"min": 50, "max": 70},
+            "hair_care": "Opt for lightweight hair products to avoid weighing down hair. Natural remedy: Aloe vera gel for a natural hold.",
+            "skin_care": "Use gel-based moisturizers to maintain hydration without greasiness. Natural remedy: Honey and yogurt face mask for balanced moisture."
+        },
+        {
+            "condition": "Very Cold",
+            "temperature": {"min": null, "max": 32},
+            "hair_care": "Intense moisturizing treatments to prevent dryness. Natural remedy: Olive oil and honey hair mask.",
+            "skin_care": "Thick, protective creams to shield skin from harsh cold. Natural remedy: Avocado face mask for deep nourishment."
+        },
+        {
+            "condition": "Mild and Dry",
+            "temperature": {"min": 60, "max": 75},
+            "humidity": {"min": 0, "max": 30},
+            "hair_care": "Regular conditioning and minimal heat styling. Natural remedy: Jojoba oil for hair hydration.",
+            "skin_care": "Regular use of light moisturizers and staying hydrated. Natural remedy: Cucumber and aloe vera gel mask."
+        },
+        {
+            "condition": "Warm and Windy",
+            "temperature": {"min": 70, "max": 85},
+            "wind_speed": {"min": 10, "max": null},
+            "hair_care": "Use hair serums to protect against wind damage. Natural remedy: Coconut milk for hair strength.",
+            "skin_care": "Light moisturizers and wind-protective sunscreen. Natural remedy: Green tea for soothing and repairing skin."
+        },
+        {
+            "condition": "Cool and Sunny",
+            "temperature": {"min": 50, "max": 65},
+            "UV_index": {"min": 4, "max": 7},
+            "hair_care": "Light hair oils for moisture and UV protection. Natural remedy: Almond oil for nourishment.",
+            "skin_care": "Daily sunscreen and light moisturizing lotions. Natural remedy: Tomato juice for natural sun protection."
+        },
+        {
+            "condition": "Hot and Humid",
+            "temperature": {"min": 85, "max": null},
+            "humidity": {"min": 70, "max": 100},
+            "hair_care": "Lightweight hair products and updos to keep hair off your neck. Natural remedy: Aloe vera gel for a natural hold.",
+            "skin_care": "Lightweight moisturizers and mattifying makeup. Natural remedy: Green tea for toning and refreshing skin."
+        },
+        {
+            "condition": "Cool and Dry",
+            "temperature": {"min": 50, "max": 65},
+            "humidity": {"min": 0, "max": 30},
+            "hair_care": "Moisturizing hair products and protective hairstyles. Natural remedy: Avocado hair mask for deep nourishment.",
+            "skin_care": "Rich moisturizers and lip balm to prevent chapping. Natural remedy: Shea butter for skin and lip protection."
+        },
+        {
+            "condition": "Very Hot",
+            "temperature": {"min": 85, "max": null},
+            "hair_care": "Lightweight hair products and updos to keep hair off your neck. Natural remedy: Aloe vera gel for a natural hold.",
+            "skin_care": "Lightweight moisturizers and mattifying makeup. Natural remedy: Green tea for toning and refreshing skin."
+        },
+        {
+            "condition": "Very Hot and Humid",
+            "temperature": {"min": 85, "max": null},
+            "humidity": {"min": 70, "max": 100},
+            "hair_care": "Lightweight hair products and updos to keep hair off your neck. Natural remedy: Aloe vera gel for a natural hold.",
+            "skin_care": "Lightweight moisturizers and mattifying makeup. Natural remedy: Green tea for toning and refreshing skin."
+        },
+        {
+            "condition": "High Wind Speed",
+            "wind_speed": {"min": 20, "max": null},
+            "hair_care": "Use strong hold hair products to maintain style. Natural remedy: Gel made from flaxseeds for strong hold.",
+            "skin_care": "Wind-resistant and hydrating skincare products. Natural remedy: Thicker layers of natural oils like coconut oil for protection."
+        },
+        {
+            "condition": "Moderately Cold",
+            "temperature": {"min": 33, "max": 50},
+            "hair_care": "Regular use of nourishing hair oils. Natural remedy: Avocado oil for deep conditioning.",
+            "skin_care": "Cream-based moisturizers for added skin protection. Natural remedy: Honey and milk cream for hydration."
+        },
+        {
+            "condition": "Mildly Warm",
+            "temperature": {"min": 76, "max": 85},
+            "humidity": {"min": 30, "max": 60},
+            "hair_care": "Lightweight styling products to keep hair breathable. Natural remedy: Rose water spray for freshness.",
+            "skin_care": "Water-based moisturizers for light hydration. Natural remedy: Cucumber and aloe vera for cooling."
+        },
+        {
+            "condition": "High Heat and Humidity",
+            "temperature": {"min": 90, "max": null},
+            "humidity": {"min": 70, "max": 100},
+            "hair_care": "Anti-humidity hair sprays and refreshing hair mists. Natural remedy: Lemon juice rinse for scalp freshness.",
+            "skin_care": "Oil-absorbing and mattifying skincare products. Natural remedy: Clay masks for oil control."
+        },
+        {
+            "condition": "Overcast but Humid",
+            "UV_index": {"min": 1, "max": 3},
+            "humidity": {"min": 60, "max": 90},
+            "hair_care": "Moisture-retaining hair products. Natural remedy: Honey-based hair treatments for moisture.",
+            "skin_care": "Balanced moisturizers and light sun protection. Natural remedy: Green tea toner for hydration and mild UV protection."
+        },
+        {
+            "condition": "Mildly Cold and Dry",
+            "temperature": {"min": 33, "max": 50},
+            "humidity": {"min": 0, "max": 30},
+            "hair_care": "Intensive hair masks to combat dryness. Natural remedy: Egg and olive oil mask for deep nourishment.",
+            "skin_care": "Hydrating skin creams and serums. Natural remedy: Glycerin and rose water mix for skin moisture."
+        },
+        {
+            "condition": "Extremely Hot",
+            "temperature": {"min": 95, "max": null},
+            "hair_care": "Protective styles and minimal use of heated tools. Natural remedy: Aloe vera and water mixture for scalp hydration.",
+            "skin_care": "Refreshing and cooling skin products. Natural remedy: Iced green tea as a facial mist."
+        },
+        {
+            "condition": "Moderately Windy",
+            "wind_speed": {"min": 5, "max": 15},
+            "hair_care": "Detangling sprays and protective hair covers. Natural remedy: Argan oil for tangle-free hair.",
+            "skin_care": "Barrier-reinforcing skincare products. Natural remedy: Shea butter and vitamin E mix for skin protection."
         }
     ]
 }
