@@ -18,10 +18,16 @@ class Weather:
   def get_weather_summary(self, weather_data):
     return weather_data["summary"]
 
-  def get_weather_data(self, city):
-    geolocation = self.get_geolocation(city)
+  def get_weather_data(self, city, state = None, country = None):
+    geolocation = self.get_geolocation(city, state, country)
+    if len(geolocation) == 0:
+      print("Uh-oh: Unable to find location.")
+      return None
+    
     lat = geolocation[0]["lat"]
     lon = geolocation[0]["lon"]
+    self.state = geolocation[0].get("state", None)
+    self.country = geolocation[0].get("country", None)
 
     # only pull daily weather data
     exclude = "current,minutely,hourly,alerts"
