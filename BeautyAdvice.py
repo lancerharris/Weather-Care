@@ -6,7 +6,6 @@ class BeautyAdvice:
       self.advice = json.load(f)
 
   def get_advice(self, weather_data):
-    summary = weather_data["summary"]
     temperature = weather_data["temp"]["day"]
     pressure = weather_data["pressure"]
     humidity = weather_data["humidity"]
