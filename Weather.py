@@ -6,6 +6,17 @@ class Weather:
     self.base_url = "https://api.openweathermap.org/data/3.0/onecall?"
     self.base_geocode_url = "http://api.openweathermap.org/geo/1.0/direct?"
     self.units = "imperial"
+    self.state = None
+    self.country = None
+
+  def get_state(self):
+    return self.state
+  
+  def get_country(self):
+    return self.country
+  
+  def get_weather_summary(self, weather_data):
+    return weather_data["summary"]
 
   def get_weather_data(self, city):
     geolocation = self.get_geolocation(city)
