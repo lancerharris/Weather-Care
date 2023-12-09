@@ -14,5 +14,6 @@ The code also uses the python-dotenv package and a .env file to hide away my API
 
 ## Conclusion
 The app is a project that was intended as a learning experience and thus isn't fully featured and break-proof. But it does serve as a starting point for something that I think would be pretty cool and useful.
+If you want to try the app you can sign up for the OpenWeatherMap One Call API 3.0 to get an api key that you can drop into a .env file at the root of the app.
 
 [Weather-Care GitHub Repository](https://github.com/lancerharris/Weather-Care)
