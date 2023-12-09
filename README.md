@@ -1,5 +1,5 @@
 # Weather-Care: Self-care advice for the day
-Weather-Care is a terminal app that takes in the days weather in a given location to give hair and skin care advice. With that infomration you can plan your self-care for the day accordingly.
+Weather-Care is a terminal app that takes in the days weather in a given location to give hair and skin care advice. With that information you can plan your self-care for the day accordingly.
 
 This was made as part of a self-driven project for the Codecademy computer science track. I used the python I learned there along along with help from chatGPT to finish the project.
 
